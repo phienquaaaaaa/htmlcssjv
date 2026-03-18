@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Product Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <img src="https://api.iconify.design/mdi/shopping.svg?color=white" alt="ShopEasy" aria-hidden="true" />
+                <h1>ShopEasy</h1>
+            </div>
+            <a class="browse-link" style="margin-left: auto;" href="index.html">← Back to store</a>
+        </div>
+    </header>
+    <main>
+        <section id="product-detail" class="product-detail page">
+            <div class="detail-header">
+                <div class="detail-heading">
+                    <h2 id="detailName">Product Name</h2>
+                    <span id="detailRating" class="rating"></span>
+                </div>
+                <a class="back-button" href="index.html">Back to store</a>
+            </div>
+
+            <div class="detail-container">
+                <div class="detail-image">
+                    <img id="detailImage" alt="Product image">
+                </div>
+                <div class="detail-info">
+                    <p id="detailDescription" class="detail-description"></p>
+                    <div class="detail-meta">
+                        <span id="detailPrice" class="price"></span>
+                        <span class="tag">In stock: <span id="detailStock"></span></span>
+                        <span class="tag">Warranty: <span id="detailWarranty"></span></span>
+                    </div>
+
+                    <div class="buy-section">
+                        <button id="buyButton" class="buy-button">Buy Now</button>
+                        <span id="buyMessage" class="buy-message" hidden>✅ Added to cart (simulated)</span>
+                    </div>
+
+                    <div class="recommendation-section">
+                        <h3>Recommended for you</h3>
+                        <div id="recommendList" class="recommend-grid"></div>
+                    </div>
+
+                    <div class="review-section">
+                        <h3>Customer Reviews</h3>
+                        <div id="reviewList" class="reviews"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="missing" class="page" hidden>
+            <div class="empty-state">
+                <h2>Product Not Found</h2>
+                <p>We couldn't find that product. Try browsing the store again.</p>
+                <a class="buy-button" href="index.html">Back to Store</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made-up store • 100% fictional products • Powered by imagination</p>
+    </footer>
+
+    <script src="product.js?v=1.0.0" defer></script>
+</body>
+</html>
