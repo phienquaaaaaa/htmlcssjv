@@ -115,7 +115,6 @@ const products = productRaw.map((item, idx) => {
         id,
         index: idx + 1,
         ...item,
-        imageUrl: buildImageUrl(`${id}-${idx}`),
         rating,
         reviews,
         reviewCount: reviews.length,
